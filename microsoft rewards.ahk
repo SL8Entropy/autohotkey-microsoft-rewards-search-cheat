@@ -11,13 +11,14 @@ MsgBox to exit, press alt+p
 InputBox, Word1, Enter first word
 InputBox, Word2, Enter second word
 InputBox, Word3, Enter third word
-
-list := [Word1,Word2,Word3]
+InputBox, Word4, Enter fourth word
+list := [Word1,Word2,Word3,Word4]
 
 
 Run msedge.exe
 a := 1
 SleepAmnt := 250
+
 ^!Enter::
 for i in list
 {
